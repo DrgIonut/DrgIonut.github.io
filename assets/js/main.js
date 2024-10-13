@@ -11,7 +11,7 @@
 
   /**
    * Header toggle
-   */
+
   const headerToggleBtn = document.querySelector('.header-toggle');
 
   function headerToggle() {
@@ -20,10 +20,10 @@
     headerToggleBtn.classList.toggle('bi-x');
   }
   headerToggleBtn.addEventListener('click', headerToggle);
-
+   */
   /**
    * Hide mobile nav on same-page/hash links
-   */
+
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
       if (document.querySelector('.header-show')) {
@@ -32,10 +32,10 @@
     });
 
   });
-
+   */
   /**
    * Toggle mobile nav dropdowns
-   */
+
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
       e.preventDefault();
@@ -44,7 +44,7 @@
       e.stopImmediatePropagation();
     });
   });
-
+   */
   /**
    * Preloader
    */
@@ -57,7 +57,7 @@
 
   /**
    * Scroll top button
-   */
+
   let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {
@@ -75,10 +75,10 @@
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
-
+   */
   /**
    * Animation on scroll function and init
-   */
+   
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -88,7 +88,7 @@
     });
   }
   window.addEventListener('load', aosInit);
-
+*/
   /**
    * Init typed.js
    */
@@ -169,7 +169,7 @@
 
   /**
    * Init swiper sliders
-   */
+   
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
@@ -185,10 +185,10 @@
   }
 
   window.addEventListener("load", initSwiper);
-
+*/
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
-   */
+   
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
@@ -203,10 +203,10 @@
       }
     }
   });
-
+*/
   /**
    * Navmenu Scrollspy
-   */
+
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
   function navmenuScrollspy() {
@@ -225,5 +225,5 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
-
+   */
 })();
